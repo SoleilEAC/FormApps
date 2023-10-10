@@ -1,0 +1,6 @@
+c:\users\graeme smyth\documents\visual studio 2015\Projects\SwimApp\SwimApp\bin\SwimApp.dll.config
+c:\users\graeme smyth\documents\visual studio 2015\Projects\SwimApp\SwimApp\bin\SwimApp.dll
+c:\users\graeme smyth\documents\visual studio 2015\Projects\SwimApp\SwimApp\bin\SwimApp.pdb
+c:\users\graeme smyth\documents\visual studio 2015\Projects\SwimApp\SwimApp\obj\Debug\SwimApp.csprojResolveAssemblyReference.cache
+c:\users\graeme smyth\documents\visual studio 2015\Projects\SwimApp\SwimApp\obj\Debug\SwimApp.dll
+c:\users\graeme smyth\documents\visual studio 2015\Projects\SwimApp\SwimApp\obj\Debug\SwimApp.pdb
