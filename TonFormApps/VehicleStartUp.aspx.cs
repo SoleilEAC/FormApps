@@ -68,8 +68,27 @@ namespace FormApps
                     sql.AddParameter("@ID", idNum);
                     sql.AddParameter("@OK", radiobutton3.Checked ? 1 : 0);
                     sql.AddParameter("@ELEMENT", description2.InnerText);
-
                     sql.Run();
+
+                    sql = new SQL("insert into VehicleInspection_detail (id,ok,element) values (@ID,@OK,@ELEMENT)");
+                    sql.AddParameter("@ID", idNum);
+                    sql.AddParameter("@OK", radiobutton5.Checked ? 1 : 0);
+                    sql.AddParameter("@ELEMENT", description3.InnerText);
+                    sql.Run();
+
+                    sql = new SQL("insert into VehicleInspection_detail (id,ok,element) values (@ID,@OK,@ELEMENT)");
+                    sql.AddParameter("@ID", idNum);
+                    sql.AddParameter("@OK", radiobutton7.Checked ? 1 : 0);
+                    sql.AddParameter("@ELEMENT", description4.InnerText);
+                    sql.Run();
+
+                    sql = new SQL("insert into VehicleInspection_detail (id,ok,element) values (@ID,@OK,@ELEMENT)");
+                    sql.AddParameter("@ID", idNum);
+                    sql.AddParameter("@OK", radiobutton9.Checked ? 1 : 0);
+                    sql.AddParameter("@ELEMENT", description5.InnerText);
+                    sql.Run();
+
+
 
                 }
 

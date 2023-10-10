@@ -45,7 +45,7 @@
         <div class="form-row form-group">
             <div class="form-holder">
               <label for="date">Date:</label>
-              <input type="text" class="form-control" id="date" placeholder="" name="date" maxlength="10"/>
+              <input type="text" class="form-control" id="date" placeholder="" name="date" maxlength="10" value="datetime.now()"/>
             </div>
               <div class="form-holder">
               <label for="odometer">Odometer:</label>
@@ -57,28 +57,35 @@
             <input type="text" class="form-control" id="operator" placeholder="Enter Operator" name="operator" maxlength="50"/>
         </div>
 
-        
-         <div class="form-group">
-              <asp:RadioButton ID="radiobutton1"  runat="server" GroupName="Line1" />
-              <asp:RadioButton ID="radiobutton2"  runat="server" GroupName="Line1" Checked="True"/>
-              <label runat="server" id="description1" class="small">Parking Brake -holds against slight acceleration</label> <br/>
-  
-          </div>
-        
-        
-           <div class="radiobuttonlist">
-              <asp:RadioButton ID="radiobutton3"  runat="server" GroupName="Line2" />
-              <asp:RadioButton ID="radiobutton4"  runat="server" GroupName="Line2" Checked="True"/>
-              <label runat="server" id="description2" class="small">PClutch and Gearshift - shifts smoothly without jumping or jerking</label> <br/>
-          </div>
 
-       
-     
-
-   
+         <div class="radiobuttonlist">
+              <asp:RadioButton ID="radiobutton1"  runat="server" GroupName="Line1" Text="Ok" />
+              <asp:RadioButton ID="radiobutton2"  runat="server" GroupName="Line1" Text="Not Ok" Checked="True"/>&nbsp;
+              <label runat="server" id="description1" class="small">Parking Brake -holds against slight acceleration</label> 
+            </div>
+         <div class="radiobuttonlist">
+              <asp:RadioButton ID="radiobutton3"  runat="server" GroupName="Line2" Text="Ok"/>
+              <asp:RadioButton ID="radiobutton4"  runat="server" GroupName="Line2" Text="Not Ok" Checked="True"/>&nbsp;
+              <label runat="server" id="description2" class="small">Foot Brake - holds, stops vehicle smoothly</label> 
+          </div>
+               <div class="radiobuttonlist">
+              <asp:RadioButton ID="radiobutton5"  runat="server" GroupName="Line3" Text="Ok"/>
+              <asp:RadioButton ID="radiobutton6"  runat="server" GroupName="Line3" Text="Not Ok" Checked="True"/>&nbsp;
+              <label runat="server" id="description3" class="small">Clutch and Gearshift - shifts smoothly without jumping or jerking</label> 
+          </div>
+          <div class="radiobuttonlist">
+              <asp:RadioButton ID="radiobutton7"  runat="server" GroupName="Line4" Text="Ok" />
+              <asp:RadioButton ID="radiobutton8"  runat="server" GroupName="Line4" Text="Not Ok" Checked="True"/>&nbsp;
+              <label runat="server" id="description4" class="small">Steering - moves smoothly; no "play"</label> 
+          </div>
+          <div class="radiobuttonlist">
+              <asp:RadioButton ID="radiobutton9"  runat="server" GroupName="Line5" Text="Ok" />
+              <asp:RadioButton ID="radiobutton10"  runat="server" GroupName="Line5" Text="Not Ok" Checked="True"/>&nbsp;
+              <label runat="server" id="description5" class="small">Lights - headlights, warning lights, and turn signals operational</label> 
+          </div>
    <%-- <button type="button" class="btn btn-default" formmethod="get">Continue</button>--%>
         <div class="input-group">
-               <asp:Button ID="BtnContinue"  isDefault="True" runat="server" OnClick="BtnContinue_Click" Text="Continue" />
+               <asp:Button ID="BtnContinue"  isDefault="True" runat="server" OnClick="BtnContinue_Click" Text="Submit" />
               </div>
             </form>
         </div>
