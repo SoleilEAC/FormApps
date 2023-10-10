@@ -7,8 +7,8 @@ namespace FormApps
         static DatabaseType type = DatabaseType.SQL;
         static string hostServer = "172.16.0.46";
         static string database = "TONApps";
-        static string username = "Forms_Viewer";
-        static string password = "Not4Everyone!2021";
+        static string username = "";
+        static string password = "";
 
         public SQL(string str) : base(type, str, hostServer, database, username, password)
         {
